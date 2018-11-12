@@ -12,22 +12,46 @@
     "linuxExecutableFilename": "",
     "macExecutableFilename": "",
     "orientation": "landscape",
-    "packageName": "com.example.gamename",
+    "packageName": "com.mrtnpwn.discosmash",
     "projectFile": "C:\\Users\\MARTIN\\GDevelop projects\\DISCOSMASH\\game.json",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "winExecutableFilename": "",
     "winExecutableIconFile": "",
-    "name": "Project",
-    "author": "",
+    "name": "DISCOSMASH",
+    "author": "Martin Aguilar",
     "windowWidth": 800,
     "windowHeight": 600,
     "latestCompilationDirectory": "",
     "maxFPS": 60,
     "minFPS": 10,
     "verticalSync": false,
-    "platformSpecificAssets": {},
+    "platformSpecificAssets": {
+      "android-icon-144": "Assets\\Icons\\Android\\android-icon-144.png",
+      "android-icon-192": "Assets\\Icons\\Android\\android-icon-192.png",
+      "android-icon-36": "Assets\\Icons\\Android\\android-icon-36.png",
+      "android-icon-48": "Assets\\Icons\\Android\\android-icon-48.png",
+      "android-icon-72": "Assets\\Icons\\Android\\android-icon-72.png",
+      "android-icon-96": "Assets\\Icons\\Android\\android-icon-96.png",
+      "desktop-icon-512": "Assets\\Icons\\Desktop\\desktop-icon-512.png",
+      "ios-icon-100": "ios-icon-100.png",
+      "ios-icon-114": "ios-icon-114.png",
+      "ios-icon-120": "ios-icon-120.png",
+      "ios-icon-144": "ios-icon-144.png",
+      "ios-icon-152": "ios-icon-152.png",
+      "ios-icon-167": "ios-icon-167.png",
+      "ios-icon-180": "ios-icon-180.png",
+      "ios-icon-29": "ios-icon-29.png",
+      "ios-icon-40": "ios-icon-40.png",
+      "ios-icon-50": "ios-icon-50.png",
+      "ios-icon-57": "ios-icon-57.png",
+      "ios-icon-58": "ios-icon-58.png",
+      "ios-icon-60": "ios-icon-60.png",
+      "ios-icon-72": "ios-icon-72.png",
+      "ios-icon-76": "ios-icon-76.png",
+      "ios-icon-80": "ios-icon-80.png"
+    },
     "loadingScreen": {
       "showGDevelopSplash": false
     },
@@ -100,15 +124,6 @@
   "resources": {
     "resources": [
       {
-        "alwaysLoaded": false,
-        "file": "../../Desktop/DISCOSMASH/assets/animations/player/player_run.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "..\\..\\Desktop\\DISCOSMASH\\assets\\animations\\player\\player_run.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
         "file": "Assets/Music/Discopew.wav",
         "kind": "audio",
         "metadata": "",
@@ -135,24 +150,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "Assets/Character/run_tile002.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Assets\\Character\\run_tile002.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Assets/Character/run_tile003.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Assets\\Character\\run_tile003.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "Assets/Character/idle_tile000.png",
         "kind": "image",
         "metadata": "",
@@ -166,6 +163,24 @@
         "kind": "image",
         "metadata": "",
         "name": "Assets\\Character\\idle_tile001.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Character/run_tile002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Character\\run_tile002.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Character/run_tile003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Character\\run_tile003.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -225,21 +240,66 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "Assets/Tiles/tileset_basicground.png",
+        "file": "Assets/Icons/Desktop/desktop-icon-512.png",
         "kind": "image",
         "metadata": "",
-        "name": "Assets\\Tiles\\tileset_basicground.png",
+        "name": "Assets\\Icons\\Desktop\\desktop-icon-512.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Icons/Android/android-icon-192.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Icons\\Android\\android-icon-192.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "Assets/Tiles/tile_discopath.png",
+        "file": "Assets/Icons/Android/android-icon-144.png",
         "kind": "image",
         "metadata": "",
-        "name": "Assets\\Tiles\\tile_discopath.png",
+        "name": "Assets\\Icons\\Android\\android-icon-144.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Icons/Android/android-icon-96.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Icons\\Android\\android-icon-96.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Icons/Android/android-icon-72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Icons\\Android\\android-icon-72.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Icons/Android/android-icon-48.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Icons\\Android\\android-icon-48.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Icons/Android/android-icon-36.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Icons\\Android\\android-icon-36.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
