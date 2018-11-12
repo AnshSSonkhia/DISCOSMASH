@@ -476,21 +476,6 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 599,
-          "layer": "",
-          "locked": false,
-          "name": "DISCO_FLOOR",
-          "width": 799,
-          "x": 0,
-          "y": 1,
-          "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
         }
       ],
       "objects": [
@@ -523,7 +508,7 @@
               "allowDiagonals": true,
               "angleOffset": 0,
               "angularMaxSpeed": 180,
-              "deceleration": 800,
+              "deceleration": 10000,
               "ignoreDefaultControls": false,
               "maxSpeed": 200,
               "name": "TopDownMovement",
