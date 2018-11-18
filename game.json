@@ -390,6 +390,144 @@
         "name": "Assets\\GUI\\Buttons\\button_info_afterpressed.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Tiles/Tilemap/Suelo/1541958019596.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Tiles\\Tilemap\\Suelo\\1541958019596.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/GUI/Buttons/Gen1/001_idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\GUI\\Buttons\\Gen1\\001_idle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/GUI/Buttons/Gen1/001_pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\GUI\\Buttons\\Gen1\\001_pressed.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/GUI/Buttons/Gen1/001_afterpressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\GUI\\Buttons\\Gen1\\001_afterpressed.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/GUI/Buttons/Gen1/001_disabled.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\GUI\\Buttons\\Gen1\\001_disabled.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/GUI/Game/hp_bar_empty.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\GUI\\Game\\hp_bar_empty.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/GUI/Game/HP/hp_bar_filled.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\GUI\\Game\\HP\\hp_bar_filled.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/GUI/Game/HP/hp_bar_filled_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\GUI\\Game\\HP\\hp_bar_filled_5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/GUI/Game/HP/hp_bar_filled_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\GUI\\Game\\HP\\hp_bar_filled_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/GUI/Game/HP/hp_bar_filled_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\GUI\\Game\\HP\\hp_bar_filled_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/GUI/Game/HP/hp_bar_filled_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\GUI\\Game\\HP\\hp_bar_filled_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/GUI/Game/HP/hp_bar_filled_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\GUI\\Game\\HP\\hp_bar_filled_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/GUI/Game/HP/hp_bar_empty.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\GUI\\Game\\HP\\hp_bar_empty.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "Assets/SFX/Character/punch.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets\\SFX\\Character\\punch.wav",
+        "userAdded": false
+      },
+      {
+        "file": "Assets/SFX/Character/damage.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets\\SFX\\Character\\damage.wav",
+        "userAdded": false
+      },
+      {
+        "file": "Assets/Music/Vacation.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets\\Music\\Vacation.wav",
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -400,6 +538,10 @@
     {
       "name": "CUTSCENE",
       "value": "nothing"
+    },
+    {
+      "name": "tipsVar",
+      "value": "Make something"
     }
   ],
   "layouts": [
@@ -429,7 +571,30 @@
         "windowMask": false,
         "zoomFactor": 1
       },
-      "objectsGroups": [],
+      "objectsGroups": [
+        {
+          "name": "PLAY",
+          "objects": [
+            {
+              "name": "PlayButton"
+            },
+            {
+              "name": "PlayText"
+            }
+          ]
+        },
+        {
+          "name": "CUSTOMIZE",
+          "objects": [
+            {
+              "name": "CustomizeButton"
+            },
+            {
+              "name": "CustomizeText"
+            }
+          ]
+        }
+      ],
       "variables": [],
       "instances": [
         {
@@ -488,6 +653,66 @@
           "x": 65,
           "y": 536,
           "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 60,
+          "layer": "",
+          "locked": false,
+          "name": "PlayButton",
+          "width": 237,
+          "x": 300,
+          "y": 340,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 33,
+          "layer": "",
+          "locked": false,
+          "name": "PlayText",
+          "width": 102,
+          "x": 374,
+          "y": 349,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 60,
+          "layer": "",
+          "locked": false,
+          "name": "CustomizeButton",
+          "width": 237,
+          "x": 300,
+          "y": 410,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "CustomizeText",
+          "width": 0,
+          "x": 320,
+          "y": 422,
+          "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -819,6 +1044,292 @@
               ]
             }
           ]
+        },
+        {
+          "name": "CustomizeButton",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "MAIN",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\GUI\\Buttons\\Gen1\\001_idle.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "PRESSED",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\GUI\\Buttons\\Gen1\\001_pressed.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "AFTER PRESSED",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\GUI\\Buttons\\Gen1\\001_afterpressed.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "DISABLED",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\GUI\\Buttons\\Gen1\\001_disabled.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PlayButton",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "MAIN",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\GUI\\Buttons\\Gen1\\001_idle.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "PRESSED",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\GUI\\Buttons\\Gen1\\001_pressed.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "AFTER PRESSED",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\GUI\\Buttons\\Gen1\\001_afterpressed.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "DISABLED",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\GUI\\Buttons\\Gen1\\001_disabled.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "CustomizeText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "CUSTOMIZE",
+          "font": "Assets/Fonts/PixelMix/pixelmix.ttf",
+          "characterSize": 30,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "PlayText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "PLAY",
+          "font": "Assets/Fonts/PixelMix/pixelmix.ttf",
+          "characterSize": 30,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
         }
       ],
       "events": [
@@ -863,7 +1374,7 @@
               "parameters": [
                 "",
                 "Assets\\Music\\Discopew.wav",
-                "menu_song",
+                "\"menu\"",
                 "yes",
                 "100",
                 ""
@@ -895,11 +1406,11 @@
           "conditions": [
             {
               "type": {
-                "inverted": false,
+                "inverted": true,
                 "value": "SourisSurObjet"
               },
               "parameters": [
-                "Title",
+                "PLAY",
                 "",
                 "",
                 ""
@@ -907,7 +1418,87 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "PlayButton",
+                "\"MAIN\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "CUSTOMIZE",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "CustomizeButton",
+                "\"MAIN\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "PLAY",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "PlayButton",
+                "\"PRESSED\""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": [
             {
               "disabled": false,
@@ -927,6 +1518,17 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "PlayButton",
+                    "\"AFTER PRESSED\""
+                  ],
+                  "subInstructions": []
+                },
                 {
                   "type": {
                     "inverted": false,
@@ -950,19 +1552,71 @@
                     ""
                   ],
                   "subInstructions": []
-                },
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "CUSTOMIZE",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "CustomizeButton",
+                "\"PRESSED\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "PlayMusicCanal"
+                    "value": "SourisBouton"
                   },
                   "parameters": [
                     "",
-                    "Assets\\Music\\Discopew.wav",
-                    "menu_song",
-                    "yes",
-                    "100",
-                    ""
+                    "Left"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "CustomizeButton",
+                    "\"AFTER PRESSED\""
                   ],
                   "subInstructions": []
                 }
@@ -1259,8 +1913,30 @@
         "windowMask": false,
         "zoomFactor": 1
       },
-      "objectsGroups": [],
-      "variables": [],
+      "objectsGroups": [
+        {
+          "name": "COLLIDE",
+          "objects": [
+            {
+              "name": "colision"
+            }
+          ]
+        },
+        {
+          "name": "STAFF",
+          "objects": [
+            {
+              "name": "Staff"
+            }
+          ]
+        }
+      ],
+      "variables": [
+        {
+          "name": "LIFE",
+          "value": "6"
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -1288,6 +1964,111 @@
           "x": 327,
           "y": 181,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 704,
+          "layer": "",
+          "locked": false,
+          "name": "FLOOR",
+          "width": 976,
+          "x": -98,
+          "y": -50,
+          "zOrder": -1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 35,
+          "layer": "",
+          "locked": false,
+          "name": "HPBar",
+          "width": 200,
+          "x": 3,
+          "y": 3,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "HPTest",
+          "width": 0,
+          "x": 490.991,
+          "y": 163.352,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Staff",
+          "width": 0,
+          "x": 288,
+          "y": 419,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Staff",
+          "width": 0,
+          "x": 354.743,
+          "y": 451.432,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Staff",
+          "width": 0,
+          "x": 429.743,
+          "y": 432.114,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Staff",
+          "width": 0,
+          "x": 479.743,
+          "y": 398.023,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1576,12 +2357,274 @@
         },
         {
           "height": 16,
-          "name": "DISCO_FLOOR",
-          "texture": "Assets\\Tiles\\tileset_basicground.png",
+          "name": "FLOOR",
+          "texture": "Assets\\Tiles\\Tilemap\\Suelo\\1541958019596.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 16,
           "variables": [],
           "behaviors": []
+        },
+        {
+          "name": "HPBar",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "FULL",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\GUI\\Game\\HP\\hp_bar_filled.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "5 LIFES",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\GUI\\Game\\HP\\hp_bar_filled_5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "4 LIFES",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\GUI\\Game\\HP\\hp_bar_filled_4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "3 LIFES",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\GUI\\Game\\HP\\hp_bar_filled_3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "2 LIFES",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\GUI\\Game\\HP\\hp_bar_filled_2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "1 LIFE",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\GUI\\Game\\HP\\hp_bar_filled_1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "EMPTY",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\GUI\\Game\\HP\\hp_bar_empty.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "HPTest",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "HPTest",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 255
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Staff",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "acceleration": 400,
+              "allowDiagonals": true,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "cellHeight": 20,
+              "cellWidth": 20,
+              "extraBorder": 0,
+              "maxSpeed": 50,
+              "name": "Pathfinding",
+              "rotateObject": true,
+              "type": "PathfindingBehavior::PathfindingBehavior"
+            }
+          ],
+          "string": "0",
+          "font": "",
+          "characterSize": 30,
+          "color": {
+            "b": 209,
+            "g": 244,
+            "r": 21
+          }
         }
       ],
       "events": [
@@ -1629,7 +2672,42 @@
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "STAFF",
+                    "STAFF",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "STAFF",
+                    "STAFF"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -1706,6 +2784,17 @@
                 "TopDownMovement"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "PLAYER",
+                "yes"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -1770,94 +2859,20 @@
                 "TopDownMovement"
               ],
               "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
                 "inverted": false,
-                "value": "KeyPressed"
+                "value": "FlipX"
               },
               "parameters": [
-                "",
-                "k"
+                "PLAYER",
+                "no"
               ],
               "subInstructions": []
             }
           ],
-          "actions": [],
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TopDownMovementBehavior::IsMoving"
-                  },
-                  "parameters": [
-                    "PLAYER",
-                    "TopDownMovement"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SetAnimationName"
-                  },
-                  "parameters": [
-                    "PLAYER",
-                    "\"PUNCH\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "TopDownMovementBehavior::IsMoving"
-                  },
-                  "parameters": [
-                    "PLAYER",
-                    "TopDownMovement"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SetAnimationName"
-                  },
-                  "parameters": [
-                    "PLAYER",
-                    "\"PUNCH\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ]
+          "events": []
         },
         {
           "disabled": false,
@@ -1895,6 +2910,20 @@
             {
               "type": {
                 "inverted": false,
+                "value": "PathfindingBehavior::SetDestination"
+              },
+              "parameters": [
+                "STAFF",
+                "Pathfinding",
+                "",
+                "PLAYER.PointX(1)",
+                "PLAYER.PointY(1)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "SetAnimationName"
               },
               "parameters": [
@@ -1904,7 +2933,135 @@
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "STAFF",
+                    "STAFF",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "STAFF",
+                    "STAFF"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "k"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "PLAYER",
+                    "\"PUNCH\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "Assets\\SFX\\Character\\punch.wav",
+                    "no",
+                    "100",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "k"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "PLAYER",
+                    "\"RUN\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "",
+          "comment2": ""
         },
         {
           "disabled": false,
@@ -1927,6 +3084,20 @@
             {
               "type": {
                 "inverted": false,
+                "value": "PathfindingBehavior::SetDestination"
+              },
+              "parameters": [
+                "STAFF",
+                "Pathfinding",
+                "",
+                "PLAYER.PointX(1)",
+                "PLAYER.PointY(1)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "SetAnimationName"
               },
               "parameters": [
@@ -1936,7 +3107,131 @@
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "k"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "PLAYER",
+                    "\"IDLE\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "k"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PUNCHCOOLDOWN\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Timer"
+                      },
+                      "parameters": [
+                        "",
+                        "2",
+                        "\"PUNCHCOOLDOWN\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "PLAYER",
+                        "\"PUNCH\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "Assets\\SFX\\Character\\punch.wav",
+                        "no",
+                        "100",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"PUNCHCOOLDOWN\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ]
         },
         {
           "disabled": false,
@@ -1965,7 +3260,7 @@
               },
               "parameters": [
                 "PLAYER",
-                "colision",
+                "COLLIDE",
                 "",
                 ""
               ],
@@ -1980,7 +3275,56 @@
               },
               "parameters": [
                 "PLAYER",
-                "colision"
+                "COLLIDE"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "PLAYER",
+                "HPTest",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "LIFE",
+                "-",
+                "0.5"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "Assets\\SFX\\Character\\damage.wav",
+                "no",
+                "100",
+                "1"
               ],
               "subInstructions": []
             }
@@ -1999,8 +3343,254 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Power ups Handler",
+          "comment": "Life Handler",
           "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "LIFE",
+                "=",
+                "5"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "HPBar",
+                "\"5 LIFES\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "LIFE",
+                "=",
+                "4"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "HPBar",
+                "\"4 LIFES\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "LIFE",
+                "=",
+                "3"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "HPBar",
+                "\"3 LIFES\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "LIFE",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "HPBar",
+                "\"2 LIFES\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "LIFE",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "HPBar",
+                "\"1 LIFES\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "LIFE",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "HPBar",
+                "\"EMPTY\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "PLAYER",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MusicStopped"
+                  },
+                  "parameters": [
+                    "",
+                    "\"GAMEOVER\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlayMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Assets\\Music\\Vacation.wav",
+                    "\"GAMEOVER\"",
+                    "yes",
+                    "100",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         }
       ],
       "layers": [
@@ -2023,6 +3613,10 @@
         }
       ],
       "behaviorsSharedData": [
+        {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior"
+        },
         {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
@@ -2061,11 +3655,11 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 64,
+          "height": 61,
           "layer": "",
           "locked": false,
           "name": "LoadingText",
-          "width": 281,
+          "width": 314,
           "x": 245,
           "y": 254,
           "zOrder": 1,
@@ -2106,8 +3700,8 @@
       ],
       "objects": [
         {
-          "bold": true,
-          "italic": true,
+          "bold": false,
+          "italic": false,
           "name": "LoadingText",
           "smoothed": true,
           "type": "TextObject::Text",
@@ -2115,7 +3709,7 @@
           "variables": [],
           "behaviors": [],
           "string": "LOADING...",
-          "font": "",
+          "font": "Assets/Fonts/PixelMix/pixelmix.ttf",
           "characterSize": 50,
           "color": {
             "b": 255,
@@ -2250,6 +3844,13 @@
         {
           "disabled": false,
           "folded": false,
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "runtimeScene.setBackgroundColor(100,100,240)\n\nvar tipsVar = runtimeScene.getVariables().get(\"tipsVar\");\n\nvar tips = [\n    \"beep beep!\",\n    \"Destroy all as soon as possible\",\n    \"Break the rules\",\n    \"Kill 'em all!\",\n    \"Be a killjoy\",\n    \"Be aware of the staff\",\n    \"No SMASH, no PARTY\"\n];\n\nvar tipsRandom = tips[Math.floor(Math.random()*tips.length)];\n\ntipsVar.setString(tipsRandom)\n",
+          "parameterObjects": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2282,9 +3883,21 @@
               },
               "parameters": [
                 "",
-                "menu_song",
+                "\"menu\"",
                 "=",
                 "70"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "TipText",
+                "=",
+                "GlobalVariableString(tipsVar)"
               ],
               "subInstructions": []
             }
@@ -2337,7 +3950,7 @@
                   },
                   "parameters": [
                     "",
-                    "menu_song"
+                    "\"menu\""
                   ],
                   "subInstructions": []
                 },
